@@ -1,0 +1,42 @@
+template:
+    # Or if you are using a remote template, you can set the Git URL
+    # url: https://github.com/CouscousPHP/Template-Light.git
+    url: https://github.com/CouscousPHP/Template-ReadTheDocs
+  
+
+# List of directories to include in the processing (by default it's empty, so all markdown files are parsed)
+# Paths are relative to the optional source path given when generating the website, repository root by default
+# include:
+#    - docs
+
+# List of directories to exclude from the processing (default contains "vendor" and "website")
+# Paths are relative to the optional include paths given when generating the website, repository root by default
+exclude:
+    - vendor
+    - website
+    - some/dir
+    # This special entry will ask Couscous to read the exluded directories from your ".gitignore"  file
+    - %gitignore%
+
+# Base URL of the published website (no "/" at the end!)
+# You are advised to set and use this variable to write your links in the HTML layouts
+baseUrl: http://filipgoc.github.io/hep-dao-2d
+
+title: fgtitle
+subTitle: fgsub
+
+# The left menu bar
+menu:
+    items:
+        home:
+            text: Home page
+            # You can use relative urls
+            relativeUrl: file1.html
+        2:
+            text: 2 page
+            # You can use relative urls
+            relativeUrl: file1.html
+        #foo:
+         #   text: Another link
+            # Or absolute urls
+          #  absoluteUrl: https://example.com
